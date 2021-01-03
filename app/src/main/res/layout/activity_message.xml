@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logol"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:text="To enter this room you need to wait for other XBreers to chat with ,and by leaving this room all the messages will be deleted defenietely so have fun in our special room !"
+        android:textSize="23sp"
+        android:layout_marginTop="160dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:layout_marginBottom="50dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anim"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Enter room"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/enterBtn"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="320dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/chat" />
+
+</RelativeLayout>

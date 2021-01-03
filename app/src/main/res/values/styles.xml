@@ -1,0 +1,22 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:textColorSecondary">@android:color/holo_blue_light</item>
+    </style>
+        <!-- sets the style for the overflow button -->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- This style defines the tint color of the overflow menu button -->
+
+
+
+</resources>

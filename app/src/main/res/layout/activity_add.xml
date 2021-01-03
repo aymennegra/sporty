@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm2"
+    tools:context=".AjouterEvenement">
+
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="638dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:layout_marginBottom="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="191dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/log" />
+
+                <EditText
+                    android:id="@+id/name2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Event name :" />
+
+                <EditText
+
+                    android:id="@+id/infoline2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Infoline:" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:text="type:"
+                        android:textSize="18dp" />
+
+                    <Spinner
+                        android:id="@+id/cat"
+                        android:layout_width="291dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/desc2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description :" />
+
+                <EditText
+
+                    android:id="@+id/location2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location :" />
+
+                <EditText
+
+                    android:id="@+id/price2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price :" />
+
+                <EditText
+
+                    android:id="@+id/date2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Available Date" />
+                <EditText
+
+                    android:id="@+id/nbplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="nb places" />
+
+                <Button
+
+                    android:id="@+id/addE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Event" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

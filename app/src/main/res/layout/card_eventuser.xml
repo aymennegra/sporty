@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="233dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/signinx"
+                android:gravity="center"
+                android:text="Annuler"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/background_img"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:foregroundGravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgb"
+
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/favori"
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/log" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="104dp"
+                app:srcCompat="@drawable/tfb" />
+
+            <TextView
+                android:id="@+id/title_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="109dp"
+                android:text="Defaultname"
+
+                android:textColor="#F8000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/type_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="110dp"
+                android:text="Defaulttype"
+
+                android:textColor="#F8FDFCFC"
+                android:textSize="20dp" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imageUser"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="140dp"
+
+
+                app:srcCompat="@drawable/u1" />
+
+
+            <TextView
+                android:id="@+id/date_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="175dp"
+                android:text="defaultdate"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="normal" />
+
+
+            <ImageView
+                android:layout_width="249dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="175dp"
+                app:srcCompat="@drawable/tfb" />
+
+            <TextView
+                android:id="@+id/price_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="178dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Default price"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/location_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="200dp"
+
+                android:text="location"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </FrameLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

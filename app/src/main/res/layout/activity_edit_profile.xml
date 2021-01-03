@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm2"
+    tools:context=".edit_profile">
+
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="638dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:layout_marginBottom="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="191dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/log" />
+
+                <EditText
+                    android:id="@+id/nameedit"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="nom" />
+
+                <EditText
+
+                    android:id="@+id/prenomedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="prenom:" />
+
+
+
+                <EditText
+                    android:id="@+id/emailedit"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="email" />
+
+                <EditText
+
+                    android:id="@+id/passwordedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="password" />
+
+                <EditText
+
+                    android:id="@+id/repasswordedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="password" />
+
+                <Button
+
+                    android:id="@+id/editprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit profile" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
